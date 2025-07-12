@@ -1,13 +1,19 @@
+import { useState, useEffect } from "react";
 import Search from "./components/search/Search"
+import Card from "./components/weather-card/Card"
 
 function App() {
-
+  const [searchResult, setSearchResult] = useState([]);
+  useEffect(() => {
+    console.log(searchResult);
+  }, [searchResult]);
   return (
     <>
-      <div className="">
-        <Search />
+      <div className="p-3">
+        <Search searchResultHandler={setSearchResult}/>
       </div>
-      <p className='text-secondary text-4xl text-center'>Welcome</p>
+      <Card weatherData={searchResult}/>
+      
     </>
   )
 }
