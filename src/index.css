@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@theme{
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-tertiary: var(--tertiary-color);
+}
+
+:root{
+  --primary-color: #292929;
+  --secondary-color: #eeeeee;
+  --tertiary-color: #4d4d4d;
+}
+
+#root{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.transition-easy{
+  transition: all 0.3s ease-in-out;
+}
