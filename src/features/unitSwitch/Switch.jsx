@@ -25,7 +25,6 @@ const TemperatureSwitch = () => {
 
     return (
         <>
-
         <h4 className='text-center font-medium text-white text-xs' >Select Unit</h4>
         <button
             onClick={toggleUnit}
