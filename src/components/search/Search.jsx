@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useDebounce } from '../../hooks/useDebounce'
-import { BASE_URL, FORECAST_URL } from '../../data/API';
+import { FORECAST_URL } from '../../data/API';
 
 const Search = ({searchResultHandler}) => {
     const [search, setSearch] = useState('');
@@ -13,7 +13,6 @@ const Search = ({searchResultHandler}) => {
         fetch(FORECAST_URL + '?key=' + (import.meta.env.VITE_WEATHER_API_KEY) + `&q=${city}&days=3`)
         .then(res=>res.json())
         .then(res => {
-            console.log(res);
             searchResultHandler(res);
             return res;
         });
