@@ -1,0 +1,1 @@
+export const FORECAST_URL = 'http://api.weatherapi.com/v1/forecast.json';
