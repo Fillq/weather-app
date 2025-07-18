@@ -33,7 +33,8 @@ const Search = ({searchResultHandler}) => {
                     onChange={(e) => setSearch(e.target.value)}
                     className='
                     ease-in transition-all duration-300 h-10 w-48 p-2 bg-gray-200 rounded-4xl outline-none border-none
-                    focus-within:bg-gray-50 focus-within:w-96 focus-within:rounded-md not-placeholder-shown:w-96'/>
+                    focus-within:bg-gray-50 md:focus-within:w-96 focus-within:rounded-md md:not-placeholder-shown:w-96'
+                />
                 <button 
                     className="w-10 h-10 rounded-full bg-gray-700 hover:bg-gray-600 flex justify-center items-center hover:*:-rotate-30 hover:*:scale-105 hover:*:*:nth-[1]:border-gray-300 hover:*:*:nth-[2]:bg-gray-300 hover:cursor-pointer"
                     onClick={() => {
