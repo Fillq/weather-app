@@ -21,6 +21,14 @@ function App() {
         <main className="flex flex-col items-center flex-grow">
           <Router>
               <Routes>
+                <Route path="/weather-app" element={
+                  <>
+                    <div className="p-3">
+                      <Search searchResultHandler={setSearchResult}/>
+                    </div>
+                    <Card weatherData={searchResult}/>
+                  </>
+                } />
                 <Route path="/" element={
                   <>
                     <div className="p-3">
