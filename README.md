@@ -5,3 +5,4 @@
 - [Tailwind CSS](https://tailwindcss.com)
 - [Font Awesome (Icons)](https://fontawesome.com)
 ---
+Aplikację można zobaczyć pod adresem: [weather-app-pi-ten-27.vercel.app](https://weather-app-pi-ten-27.vercel.app)
