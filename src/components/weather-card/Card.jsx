@@ -44,7 +44,7 @@ const Card = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="w-3/4 md:w-fit flex md:flex-row md:gap-2 gap-2 md:gap-8 flex-col flex-nowrap md:min-w-0 min-w-80 md:flex-wrap justify-center">
+                <div className="w-3/4 md:w-fit flex md:flex-row gap-2 md:gap-8 flex-col flex-nowrap md:min-w-0 min-w-80 md:flex-wrap justify-center">
                     {forecastData.forecastday.map((day, ix) => (
                         <div className="flex flex-col justify-center items-center py-3 px-12 bg-slate-200/40 rounded-lg" key={ix}>  
                             <h3 className='text-lg font-medium tracking-wide'>{ ix === 0 ? 'Today' : (ix === 1 ? 'Tomorrow' : (new Date(day.date_epoch * 1000).toLocaleString('en-US', { weekday: 'long' })) ) }</h3>
