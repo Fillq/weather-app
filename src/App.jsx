@@ -14,10 +14,11 @@ function App() {
 
   return (
     <>
+      <div className="transition-all duration-300 fixed top-3 left-3 md:top-14/15 z-10 w-fit">
+        <Switch/>
+      </div>
       <div className={(searchResult && searchResult.current ? (searchResult.current.is_day ? bgVariations[0] : bgVariations[1]) : bgVariations[0])}>
-        <div className="absolute bottom-3 left-3">
-          <Switch/>
-        </div>
+        
         <main className="flex flex-col items-center flex-grow">
           <Router>
               <Routes>
