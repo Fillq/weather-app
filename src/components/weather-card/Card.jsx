@@ -5,7 +5,7 @@ import ThermometerIcon from '../../assets/weather/thermometer_icon.svg';
 import ClockIcon from '../../assets/time/clock-icon.svg';
 const Card = (props) => {
     const { getItem } = useLocalStorage('temperatureUnit');
-    const preferedUnit = getItem();
+    const preferedUnit = getItem() || 'C';
 
     const weatherData = props.weatherData.current;
     const locationData = props.weatherData.location;
