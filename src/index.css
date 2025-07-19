@@ -19,8 +19,12 @@
   --bg-bottom-gradient-night: #141516;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 #root{
-  min-width: 100vw;
+  min-width: 100dvw;
   min-height: 100vh;
 }
 

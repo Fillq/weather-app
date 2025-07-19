@@ -10,7 +10,7 @@ const Search = ({searchResultHandler}) => {
 
     const fetchWeatherData = (city) => {
         if(!city || city === '') return;
-        fetch(FORECAST_URL + '?key=' + (import.meta.env.VITE_WEATHER_API_KEY) + `&q=${city}&days=3`)
+        fetch(FORECAST_URL + '?key=' + (import.meta.env.VITE_WEATHER_API_KEY) + `&q=${city}&days=5`)
         .then(res=>res.json())
         .then(res => {
             searchResultHandler(res);
